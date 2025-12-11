@@ -1,0 +1,312 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #0077ff;
+}
+
+
+
+
+
+/* ---------------- GENERAL ---------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #0077ff;
+}
+
+/* ---------------- HOME PAGE ---------------- */
+.home {
+  height: 100vh; /* full screen */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #42f5e6, #ffdc6e, #ff6ec4);
+  background-size: 600% 600%;
+  animation: rainbowAnimation 15s ease infinite;
+}
+
+/* Center card */
+.card {
+  background: rgba(255, 255, 255, 0.08); /* glass effect */
+  padding: 40px 60px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h1 {
+  font-size: 50px;
+}
+
+.card p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ---------------- ANIMATION ---------------- */
+@keyframes rainbowAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------- ABOUT PAGE STYLE ---------------- */
+.about-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top,#4b6cb7,#182848);
+  animation: subtleMove 8s ease-in-out infinite alternate;
+}
+
+/* glass transparent box */
+.glass-box {
+  background: rgba(255,255,255,0.1);
+  padding: 30px 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.25);
+}
+
+/* ---------------- CONTACT PAGE STYLE ---------------- */
+.contact-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg,#141e30,#243b55);
+  position: relative;
+  overflow:hidden;
+}
+
+/* spotlight hover effect */
+.contact-container::before {
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  background:#00e5ff33;
+  filter: blur(100px);
+  animation: glow 6s infinite alternate;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  padding:40px 60px;
+  border-radius:18px;
+  backdrop-filter:blur(10px);
+  color:white;
+  text-align:center;
+  box-shadow:0 0 25px rgba(255,255,255,0.1);
+}
+
+.contact-btn {
+  margin-top:20px;
+  padding:12px 26px;
+  border:none;
+  background:#00e5ff;
+  color:#000;
+  font-weight:bold;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* animations */
+@keyframes glow {
+  from{ transform: translate(-100px,-100px); }
+  to{ transform: translate(200px,200px); }
+}
+
+@keyframes subtleMove {
+  from{ background-position:0% 50%; }
+  to{ background-position:100% 50%; }
+}
+
+
+
+/* Navbar style */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #d3ddf0, #d3dced);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------- NAVBAR & BUTTON STYLES ---------------- */
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center; /* center the nav items */
+  gap: 20px; /* space between buttons */
+  position: fixed; /* fixed on top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #b0dce6 0%, #a7d5cce4 100%);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Navbar buttons left align */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Buttons left side */
+  gap: 20px;                   /* Buttons ke beech thoda space */
+  padding: 15px 30px;
+}
+
+
+
+.about-list {
+  padding-left: 20px; /* bullets ko thoda left margin dene ke liye */
+  margin-top: 20px;
+}
+
+.about-list li {
+  margin-bottom: 15px; /* har line ke beech space */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f2f6ff;
+  min-height: 80vh;
+}
+
+.contact-card {
+  background: white;
+  padding: 35px;
+  width: 420px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.sub-text {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.contact-list li {
+  background: #eef3ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+
+
+
